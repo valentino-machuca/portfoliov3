@@ -1,6 +1,11 @@
 .App {
   background-color: #f4f3ee;
   color: #353535;
-  height: 200vh;
   font-family: 'DM Sans', sans-serif;
+}
+
+.views{
+  position: absolute;
+  margin-top: 10vh;
+  width: 100%;
 }

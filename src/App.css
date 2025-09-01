@@ -8,4 +8,6 @@
   position: absolute;
   margin-top: 10vh;
   width: 100%;
+  overflow-x: hidden;
+  background-color: #f4f3ee;
 }

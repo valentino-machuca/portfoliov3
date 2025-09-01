@@ -1,5 +1,6 @@
 import './App.css';
 import Navbar from './Components/Navbar';
+import Social from './Components/Social';
 import Home from './Views/Home';
 
 function App() {

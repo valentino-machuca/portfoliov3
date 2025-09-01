@@ -1,0 +1,12 @@
+.container{
+    position: fixed;
+    border-radius: 10px;
+    background-color: #acacac52;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    top: 88vh;
+    left: 69vw;
+    width: 30vw;
+    height: 10vh;
+    z-index: 3;
+    backdrop-filter: blur(10px);
+}

@@ -1,33 +1,24 @@
 .container{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
     margin-inline: 5%;
     height: 80vh;
-
-    .dev, .soft, .front{
-        color: #222;
-        font-family: 'Archivo Black', sans-serif;
-        font-size: 10rem;
-        margin: 0.5rem;
-    }
-
-    .front{
-        font-size: 9rem;
-        width: 100%;
-    }
     
     .devContainer{
         display: flex;
-        justify-content: flex-end;
-        align-items: center;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
         width: 100%;
 
-        .soft{
-            margin-right: 2rem;
-            font-size: 8rem;
-            font-family: 'Playwrite AU SA', sans-serif;
+        h1{
+            margin: 0;
+            padding: 0;
+            margin-bottom: -5rem;
+            font-size: 16rem;
+            color: #222;
         }
     }
 }

@@ -1,7 +1,8 @@
 import './App.css';
 import Navbar from './Components/Navbar';
-import Social from './Components/Social';
+import ParallaxText from './Components/ParallaxText';
 import Home from './Views/Home';
+import Work from './Views/Work';
 
 function App() {
   return (
@@ -9,8 +10,9 @@ function App() {
       <Navbar/>
       <div className='views'>
         <Home/>
-        <Home/>
-        <Home/>
+        <ParallaxText baseVelocity={3}>seamless interfaces</ParallaxText>
+        <ParallaxText baseVelocity={-3}>full-stack creativity</ParallaxText>
+        <Work/>
       </div>
     </div>
   );

@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+import { delay, motion } from 'framer-motion';
 import s from './Home.module.scss';
 import { useState } from 'react';
 
@@ -15,6 +15,14 @@ const onscreen = {
 const frontVariants = { offscreen: { x: -1000, opacity: 0 }, onscreen }
 const devVariants = { offscreen: { x: 1000, opacity: 0 }, onscreen }
 
+const containerVariants = { offscreen: { opacity: 0 }, onscreen: { opacity: 1, transition: {
+            type: "spring",
+            bounce: 0.2,
+            duration: 0.5,
+            delayChildren: 0.2,
+            staggerChildren: 0.2,
+}}}
+
 const Home = () => {
   
 
@@ -24,21 +32,23 @@ const Home = () => {
             whileInView="onscreen"
             viewport={{ amount: 0.6 }}
     >
-      <div className={s.devContainer}>
-        <DragH1 variants={frontVariants}>Software</DragH1>
-        <DragH1 variants={devVariants}>.dev</DragH1>
-      </div>
+      <motion.div className={s.devContainer} variants={containerVariants}>
+        <DragH1 variants={frontVariants} styles={{marginBottom: '-2rem'}}>SOFTWARE</DragH1>
+        <DragH1 variants={devVariants}>DEV.</DragH1>
+        <DragH1 variants={frontVariants} styles={{fontWeight: 500, fontSize: '5rem'}}>PORTFOLIO</DragH1>
+      </motion.div>
     </motion.div>
   )
 }
 
-const DragH1 = ({children, variants}) => {
+const DragH1 = ({children, variants, styles}) => {
   const [activeDirection, setActiveDirection] = useState(null);
 
   return (
       <motion.h1
         variants={variants}
         drag
+        style={styles}
         dragDirectionLock
         onDirectionLock={(direction) => setActiveDirection(direction)}
         onDragEnd={() => setActiveDirection(null)}

@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -8,6 +12,8 @@ body {
   --sb-track-color: #f4f3ee;
   --sb-thumb-color: #353535;
   --sb-size: 7px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
 code {

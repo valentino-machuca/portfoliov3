@@ -15,13 +15,13 @@ const Navbar = () => {
         <h2>.valentino</h2>
         <div className={s.title_options}>
             <div className={s.list}>
-                <p style={{animationDelay: '.4s'}}>work</p>
-                <p style={{animationDelay: '.5s'}}>about</p>
+                <a href='#work' style={{animationDelay: '.4s'}}>work</a>
+                <a style={{animationDelay: '.5s'}}>about</a>
             </div>
             <motion.div style={{ scaleX }} className={s.progress}/>
             <div className={s.contact}>
-                <p style={{animationDelay: '.6s'}}>techs</p>
-                <p style={{animationDelay: '.7s'}}>contact</p>
+                <a style={{animationDelay: '.6s'}}>techs</a>
+                <a style={{animationDelay: '.7s'}}>contact</a>
             </div>
         </div>
     </div>

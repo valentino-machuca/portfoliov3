@@ -7,7 +7,8 @@
     width: 94vw;
     z-index: 2;
     position: fixed;
-    background-color: #f4f3ee;
+    background-color: #f4f3ee7e;
+    backdrop-filter: blur(10px);
 
     h2{
         animation: initX .3s .3s both;
@@ -33,12 +34,14 @@
             width: 78%;
         }
 
-        p{
+        a{
             transition: .3s;
             animation: initY .3s both;
             cursor: pointer;
             padding: .5em;
             font-weight: 600;
+            color: #353535;
+            text-decoration: none;
 
             &:hover{
                 transition: .3s;

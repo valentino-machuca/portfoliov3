@@ -10,8 +10,8 @@ function App() {
       <Navbar/>
       <div className='views'>
         <Home/>
-        <ParallaxText baseVelocity={3}>seamless interfaces</ParallaxText>
-        <ParallaxText baseVelocity={-3}>full-stack creativity</ParallaxText>
+        <ParallaxText baseVelocity={2}>seamless interfaces</ParallaxText>
+        <ParallaxText baseVelocity={-2}>fullstack creativity</ParallaxText>
         <Work/>
       </div>
     </div>

@@ -12,12 +12,14 @@
         padding: 0.5rem;
         background-color:#222;  
         font-family: 'Montserrat', sans-serif;
-        font-weight: 500;
+        font-weight: 800;
+        letter-spacing: 2px;
         text-align: center;
         color: #eee;
         margin-right: 30px;
         margin: 0.2rem;
         border-radius: 5px;
+        text-transform: uppercase;
 
         &:hover {
             transition: .3s;

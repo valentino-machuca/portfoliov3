@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { backIn, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import s from './Work.module.scss';
 import WorkCard from '../../Components/WorkCard';
 import Modal from '../../Components/Modal';
@@ -17,9 +17,9 @@ const onscreen = {
 
 const variants = { offscreen: { scale: 0, opacity: 0 }, onscreen }
 const workList = [
-    { id: 1, title: "Personal Projects", description: "This is a description for personal projects.", backgroundUrl: "/src/assets/pattern_1.gif"},
-    { id: 2, title: "Design Projects", description: "This is a description for design projects.", backgroundUrl: "/src/assets/pattern_2.gif" },
-    { id: 3, title: "Professional Projects", description: "This is a description for professional projects.", backgroundUrl: "/src/assets/pattern_3.gif" },
+    { id: 1, title: "Personal Projects", description: "This is a description for personal projects.", backgroundUrl: "https://i.makeagif.com/media/1-10-2024/1sE2ha.gif"},
+    { id: 2, title: "Design Projects", description: "This is a description for design projects.", backgroundUrl: "https://media2.giphy.com/channel_assets/virartz/5cef10ZOq5yc.gif" },
+    { id: 3, title: "Professional Projects", description: "This is a description for professional projects.", backgroundUrl: "https://64.media.tumblr.com/047f854c0b3e21e92a881869a1adc94c/cf8f515e7e27c2f9-3a/s1280x1920/6799d5afbc8714cdd4d54d6876fd32b121795863.gif" },
 ]
 
 

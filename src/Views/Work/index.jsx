@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { motion } from 'framer-motion';
+import { backIn, motion } from 'framer-motion';
 import s from './Work.module.scss';
 import WorkCard from '../../Components/WorkCard';
 import Modal from '../../Components/Modal';
@@ -17,9 +17,9 @@ const onscreen = {
 
 const variants = { offscreen: { scale: 0, opacity: 0 }, onscreen }
 const workList = [
-    { id: 1, title: "Project One", description: "This is a description for project one." },
-    { id: 2, title: "Project Two", description: "This is a description for project two." },
-    { id: 3, title: "Project Three", description: "This is a description for project three." },
+    { id: 1, title: "Personal Projects", description: "This is a description for personal projects.", backgroundUrl: "/src/assets/pattern_1.gif"},
+    { id: 2, title: "Design Projects", description: "This is a description for design projects.", backgroundUrl: "/src/assets/pattern_2.gif" },
+    { id: 3, title: "Professional Projects", description: "This is a description for professional projects.", backgroundUrl: "/src/assets/pattern_3.gif" },
 ]
 
 
@@ -55,7 +55,15 @@ const Work = () => {
                 >
                     {
                         workList.map( (work, index) => 
-                            <WorkCard onClickView={() => onClickView(work)} id={work.id} key={index} title={work.title} description={work.description} w="65%" h="25vh" delay={index * 0.2}/>
+                            <WorkCard 
+                                onClickView={() => onClickView(work)} 
+                                id={work.id} 
+                                key={index} 
+                                title={work.title} 
+                                description={work.description} w="65%" h="25vh" 
+                                delay={index * 0.2}
+                                image={work.backgroundUrl}
+                            />
                         )
                     }
                 </motion.div>

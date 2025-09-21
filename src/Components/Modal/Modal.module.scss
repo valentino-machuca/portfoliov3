@@ -1,0 +1,64 @@
+.container{
+    position: fixed;
+    animation: init 0.5s 0.3s both;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1000;
+    width: 100vw;
+    height: 100vh;
+
+    .content{
+        width: 85%;
+        height: 85%;
+        border-radius: 10px;
+        background-color: #222;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+
+        h2{
+            margin: 0;
+            padding: 0;
+            color: #222;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3rem;
+            font-weight: 800;
+        }
+
+        p{
+            color: #222;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 400;
+            text-align: center;
+        }
+
+        .close{
+            transition: 0.3s;
+            position: absolute;
+            top: 1rem;
+            right: 2rem;
+            background-color: transparent;
+            border: none;
+            font-size: 2rem;
+            color: #eee;
+            cursor: pointer;
+
+            &:hover{
+                transition: 0.3s;
+                scale: 0.9;
+                color: #acabab;
+            }
+        }
+    }
+}
+
+@keyframes init {
+    0% { background-color: transparent; }
+    100% {background-color: #22222279; backdrop-filter: blur(5px);}
+}

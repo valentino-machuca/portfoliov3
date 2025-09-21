@@ -14,11 +14,11 @@ const onscreen = {
     }
 }
 
-const WorkCard = ({ title, description, w, h, delay }) => {
+const WorkCard = ({ id, title, description, w, h, delay, onClickView }) => {
     const variants = { offscreen: { scale: 0, opacity: 0, y: 100, borderRadius: 0 }, onscreen: {...onscreen, transition: {...onscreen.transition, delay}} }
 
     return (
-        <motion.div variants={variants} className={s.container} style={{ width: w, height: h }}>
+        <motion.div layoutId={`modal_${id}`} onClick={onClickView} variants={variants} className={s.container} style={{ width: w, height: h }}>
             <h2>{title}</h2>
             <p>{description}</p>
         </motion.div>

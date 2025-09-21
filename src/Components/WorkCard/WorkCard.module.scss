@@ -12,8 +12,8 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        backdrop-filter: blur(2px);
-        background-color: #05050586;
+        backdrop-filter: blur(1px);
+        background-color: #0505059d;
         border-radius: 15px;
         width: 100%;
         height: 100%;
@@ -21,10 +21,14 @@
         h2{
             font-size: 3rem;
             margin: 2rem 0 0 2rem;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
         }
 
         p{
-            margin: 0 0 0 2rem;
+            margin: .5rem 0 0 2.2rem;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 200;
         }
     }
 }

@@ -1,4 +1,4 @@
-import { delay, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import s from './Home.module.scss';
 import { useState } from 'react';
 
@@ -35,7 +35,7 @@ const Home = () => {
       <motion.div className={s.devContainer} variants={containerVariants}>
         <DragH1 variants={frontVariants} styles={{marginBottom: '-2rem'}}>SOFTWARE</DragH1>
         <DragH1 variants={devVariants}>DEV.</DragH1>
-        <DragH1 variants={frontVariants} styles={{fontWeight: 500, fontSize: '5rem'}}>PORTFOLIO</DragH1>
+        <DragH1 variants={frontVariants} styles={{fontWeight: 600, fontSize: '5rem', fontFamily: 'Playwrite AU SA'}}>Portfolio</DragH1>
       </motion.div>
     </motion.div>
   )

@@ -46,7 +46,7 @@ const Work = () => {
                     <motion.h2 variants={variants} className={s.stop}>work</motion.h2>
                     <motion.h2 variants={variants} >work</motion.h2>
                     <motion.h2 variants={variants} className={s.sbottom}>work</motion.h2>
-                </motion.div> : <></>
+                </motion.div>
 
                 <motion.div className={s.cards}
                             initial="offscreen"

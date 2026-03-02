@@ -12,16 +12,15 @@ const Navbar = () => {
 
   return (
     <div className={s.container}>
-        <h2>.valentino</h2>
+        <a href='#asadito' className={s.title}>.asadito</a>
         <div className={s.title_options}>
-            <div className={s.list}>
+            {/* <div className={s.list}>
                 <a href='#work' style={{animationDelay: '.4s'}}>work</a>
-                <a style={{animationDelay: '.5s'}}>about</a>
-            </div>
+            </div> */}
             <motion.div style={{ scaleX }} className={s.progress}/>
             <div className={s.contact}>
-                <a style={{animationDelay: '.6s'}}>techs</a>
-                <a style={{animationDelay: '.7s'}}>contact</a>
+                {/* <a style={{animationDelay: '.6s'}} href='#about'>about</a> */}
+                <a style={{animationDelay: '.7s'}} href='#asadito'>vmachuka</a>
             </div>
         </div>
     </div>

@@ -31,6 +31,8 @@ const Home = () => {
             initial="offscreen"
             whileInView="onscreen"
             viewport={{ amount: 0.6 }}
+            id='home'
+            
     >
       <motion.div className={s.devContainer} variants={containerVariants}>
         <DragH1 variants={frontVariants} styles={{marginBottom: '-2rem'}}>SOFTWARE</DragH1>

@@ -10,11 +10,20 @@
     background-color: #f4f3ee7e;
     backdrop-filter: blur(10px);
 
-    h2{
+    .title{
         animation: initX .3s .3s both;
-        cursor: default;
+        transition: .3s;
         text-align: center;
         font-weight: 800;
+        font-size: 2em;
+        text-decoration: none;
+        color: #353535;
+
+        &:hover{
+            scale: 1.05;
+            overflow: hidden;
+            cursor: pointer;
+        }
     }
 
     .title_options{
@@ -23,7 +32,7 @@
 
         .list, .contact{
             display: flex; justify-content: center; align-items: center;
-            width: 10%;
+            width: auto;
         }
 
         .progress{
@@ -31,7 +40,7 @@
             border-radius: 10px;
             background-color: rgb(34, 33, 33);
             transform-origin: 0%;
-            width: 78%;
+            width: 90%;
         }
 
         a{
@@ -71,5 +80,11 @@
     100%{
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .progress{
+        opacity: 0;
     }
 }

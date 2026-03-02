@@ -1,18 +1,18 @@
 import './App.css';
 import Navbar from './Components/Navbar';
-import ParallaxText from './Components/ParallaxText';
-import Home from './Views/Home';
-import Work from './Views/Work';
+import Terms from './Views/Terms/Terms';
 
 function App() {
   return (
     <div className="App">
       <Navbar/>
       <div className='views'>
-        <Home/>
+        {/* <Home/>
         <ParallaxText baseVelocity={2}>seamless interfaces</ParallaxText>
         <ParallaxText baseVelocity={-2}>fullstack creativity</ParallaxText>
         <Work/>
+        <About/> */}
+        <Terms/>
       </div>
     </div>
   );
